@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>Invoice Generator</h2>
+        <p>Thanks for choosing GoodCorp, LLC!</p>
+    </header>
+
+    <main>
+        <div class="task-button">
+            <button id="wash">Wash Car: $10</button>
+            <button id="mow">Mow Lawn: $20</button>
+            <button id="weed">Pull Weeds: $30</button>
+        </div>
+        
+        <section class="task-price">
+            <div class="task">
+                <p>TASK</p>
+                <h4>Wash Car</h4>
+                <h4>Mow Lawn</h4>
+                <h4>Pull Weeds</h4>
+            </div>
+
+            <div class="price">
+                <p>TOTAL</p>
+                <h4><span>$</span>10</h4>
+                <h4><span>$</span>20</h4>
+                <h4><span>$</span>30</h4>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="total">
+            <div class="notes">
+                <p>
+                    NOTES <br>
+                    <span>
+                        We accept cash, credit card, or Paypal
+                    </span> 
+                </p>
+            </div>
+
+            <div class="amount">
+                <p>TOTAL AMOUNT</p>
+                <h3>$60</h3>
+            </div>
+        </section>
+
+        <button id="send-invoice"><img src="Images/Iconmail.png" alt="Send Icon"> Send Invoice</button>
+    </main>
+
+    <div class="githublink">
+        <a href="https://github.com/Aphatheology" target="_blank">
+            <img src="Images/icongithub.png" alt="Githun Icon">
+            Aphatheology
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

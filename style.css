@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter' , sans-serif;
+}
+
+body {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+
+header {
+    width: 100%;
+    height: 190px;
+    background-color: hsl(221, 63%, 53%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header h2 {
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+main {
+    width: 100%;
+    background-color: hsl(215, 28%, 17%);
+    padding: 30px;
+}
+
+.task-button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.task-button button {
+    width: 140px;
+    height: 45px;
+    text-align: center;
+    background-color: hsl(234, 62%, 89%);
+    color: hsl(234, 22%, 37%);
+    outline: none;
+    border: none;
+    border-radius: 7px;
+}
+
+.task-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.task-price .price {
+    text-align: right;
+}
+
+.task-price p {
+    color: hsl(255, 5%, 84%);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 2.5;
+}
+
+.task-price h4 {
+    color: hsl(0, 0%, 96%);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.task-price span {
+    color: hsl(254, 6%, 58%);
+}
+
+hr {
+    background-color: hsl(234, 25%, 81%);
+    border: none;
+    height: 2px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.total {
+    margin: 15px 0px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.total .amount {
+    text-align: right;
+}
+
+.total p {
+    color: hsl(255, 5%, 84%);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 2.5;
+}
+
+.total span {
+    color: hsl(0, 0%, 96%);
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.total h3 {
+    color: hsl(0, 0%, 96%);
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#send-invoice {
+    background-color: hsl(221, 63%, 53%);
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 44px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    display: inline-flex;
+    justify-content: center;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.githublink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(215, 28%, 17%);
+    padding: 5px;
+}
+
+.githublink a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.githublink a:visited {
+    color: white;
+}
+
+.githublink img {
+    height: 16px;
+    width: 16px;
+}
+
+@media screen and (max-width: 550px) {
+    body {
+        position: static;
+        left: 0%;
+        top: 0%;
+        transform: translate(0% , 0%);
+        width: 100vw;
+        margin: 0px auto;
+    }
+
+    header {
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    main {
+        padding: 30px 15px;
+    }
+
+    .task-button {
+        row-gap: 10px;
+        column-gap: 10px;
+        justify-content: center;
+    }
+
+    .total p {
+        line-height: 1.5;
+    }
+}
