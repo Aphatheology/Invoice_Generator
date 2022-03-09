@@ -95,6 +95,20 @@ main {
     color: hsl(254, 6%, 58%);
 }
 
+/* #task {
+    display: flex;
+    flex-direction: col;
+} */
+
+#task button {
+    color: red;
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
 hr {
     background-color: hsl(234, 25%, 81%);
     border: none;
@@ -194,9 +208,11 @@ hr {
     }
 
     .task-button {
-        row-gap: 10px;
-        column-gap: 10px;
         justify-content: center;
+    }
+
+    .task-button button {
+        width: 100px;
     }
 
     .total p {
