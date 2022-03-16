@@ -8,10 +8,6 @@
 }
 
 body {
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; */
     position: absolute;
     left: 50%;
     top: 50%;
@@ -68,46 +64,59 @@ main {
     border-radius: 7px;
 }
 
-.task-price {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 10px;
+    flex-basis: 100%;
 }
 
-.task-price .price {
-    text-align: right;
-}
-
-.task-price p {
-    color: hsl(255, 5%, 84%);
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 2.5;
-}
-
-.task-price h4 {
+.list li {
     color: hsl(0, 0%, 96%);
     font-size: 20px;
     margin-bottom: 10px;
-}
-
-.task-price span {
-    color: hsl(254, 6%, 58%);
-}
-
-/* #task {
     display: flex;
-    flex-direction: col;
-} */
+    justify-content: space-between;
+    position: relative;
+} 
 
-#task button {
-    color: red;
-    display: inline-block;
-    margin-left: 10px;
-    font-size: 16px;
-    border: none;
-    outline: none;
+.task-price {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
+
+.task-price hr {
+    margin-top: 2px;
+    background-color: hsl(234, 25%, 81%);
+    border: none;
+    height: 1px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.task-price > h4 {
+    color: hsl(0, 0%, 96%);
+    font-size: 25px;
+}
+
+.task-price > h4:last-of-type {
+    text-align: right;
+}
+
+.delete-task {
+    cursor: pointer;
+    background-color: #e74c3c;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 2px 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
 hr {
     background-color: hsl(234, 25%, 81%);
@@ -163,6 +172,7 @@ hr {
     justify-content: center;
     column-gap: 10px;
     align-items: center;
+    cursor: pointer;
 }
 
 .githublink {
@@ -195,6 +205,7 @@ hr {
         transform: translate(0% , 0%);
         width: 100vw;
         margin: 0px auto;
+        background-color: hsl(215, 28%, 17%);
     }
 
     header {
@@ -206,7 +217,7 @@ hr {
     main {
         padding: 30px 15px;
     }
-
+    
     .task-button {
         justify-content: center;
     }
